@@ -1,167 +1,305 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
 }
 
 .fa-solid {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+  margin: 0;
+  font-size: 22px;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .card-title {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .euro {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+  color: var(--main-bg-color);
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+/****** Header ***********/
+
+/* Header navbar pour écran d'ordinateur */
+.header-navbar {
+  height: 79px; /* Hauteur de la navbar */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  justify-content: space-between; /* Espacement égal entre les éléments */
 }
 
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+/* Navigation pour écran d'ordinateur */
+.header-nav {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  width: 344px; /* Largeur de la navigation */
+  height: 35px; /* Hauteur de la navigation */
+  justify-content: space-evenly; /* Espacement égal entre les éléments */
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
+/* Logo du site pour écran d'ordinateur */
+.header-logo img {
+  width: 61px; /* Largeur du logo */
+  height: 19px; /* Hauteur du logo */
 }
 
-/****** Populaires ***********/
-.populaires {
-    width: 32%;
+/* Conteneur du logo pour écran d'ordinateur */
+.header-logo {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
 }
 
-.populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Éléments de navigation pour écran d'ordinateur */
+.header-nav-item {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
 }
 
-.populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+/* Style de survol pour les éléments de navigation */
+.header-nav-item:hover {
+  color: var(--main-color); /* Changer la couleur au survol */
+  border-top: 2px solid var(--main-color); /* Ajouter une bordure en haut au survol */
 }
 
-.populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+/* Alignement du texte des éléments de navigation */
+.header-nav-item-text {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  align-self: flex-end; /* Aligner en bas */
 }
 
-.populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+/* Section principale du header pour écran d'ordinateur */
+.header-main-section {
+  margin: 30px 0 35px 0; /* Marges autour de la section */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  flex-direction: column; /* Disposition en colonne */
+  justify-content: space-between; /* Espacement égal entre les éléments */
+  height: 281px; /* Hauteur de la section */
+  max-width: 100%; /* Largeur maximale de 100% */
 }
 
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+/* Texte principal du header pour écran d'ordinateur */
+.header-main-text {
+  height: 53px; /* Hauteur du texte principal */
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
+/* Titre principal du header pour écran d'ordinateur */
+.header-main-text h1 {
+  font-size: 22px; /* Taille de la police */
+  font-weight: bold; /* Poids de la police en gras */
+  overflow-wrap: break-word; /* Permet le retour à la ligne */
+  margin-bottom: 8px; /* Marge inférieure */
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
+/* Barre de recherche dans le header pour écran d'ordinateur */
+.header-searchbar {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  width: 377px; /* Largeur de la barre de recherche */
+  height: 49px; /* Hauteur de la barre de recherche */
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  text-align: center; /* Centrer le texte */
+  border: 1px solid var(--main-bg-color); /* Bordure de la barre de recherche */
+  border-radius: 15px; /* Coins arrondis */
 }
 
-
-
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards a {
-        width: 30%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+/* Icône de localisation dans la barre de recherche */
+.header-searchbar-pin {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  height: 49px; /* Hauteur de l'icône */
+  width: 50px; /* Largeur de l'icône */
+  background-color: var(--main-bg-color); /* Couleur de fond */
+  border-top-left-radius: 15px; /* Coin supérieur gauche arrondi */
+  border-bottom-left-radius: 15px; /* Coin inférieur gauche arrondi */
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+/* Style de l'icône dans la barre de recherche */
+.header-searchbar-pin .fa-solid {
+  width: 14px; /* Largeur de l'icône */
+  height: 18px; /* Hauteur de l'icône */
+  color: black; /* Couleur de l'icône */
+}
+
+/* Champ de saisie de la barre de recherche */
+.header-searchbar input[type="text"] {
+  position: relative; /* Position relative pour ajustement */
+  left: 24px; /* Décalage à gauche */
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold; /* Poids de la police en gras */
+  border: none; /* Pas de bordure */
+  outline: none; /* Pas de contour */
+  overflow: hidden; /* Masquer le dépassement */
+  z-index: 0; /* Niveau de superposition */
+}
+
+/* Conteneur du champ de saisie dans la barre de recherche */
+.header-searchbar-city {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  align-items: center; /* Centrer verticalement */
+  width: 197px; /* Largeur du conteneur */
+  height: 49px; /* Hauteur du conteneur */
+  flex-grow: 1; /* Croissance flexible pour occuper tout l'espace disponible */
+}
+
+/* Bouton de recherche dans la barre de recherche */
+.header-searchbar-search {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  width: 132px; /* Largeur du bouton */
+  height: 49px; /* Hauteur du bouton */
+  color: white; /* Couleur du texte */
+  background-color: var(--main-color); /* Couleur de fond */
+  text-align: center; /* Centrer le texte */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  border-top-right-radius: 15px; /* Coin supérieur droit arrondi */
+  border-bottom-right-radius: 15px; /* Coin inférieur droit arrondi */
+  z-index: 2; /* Niveau de superposition */
+  cursor: pointer; /* Curseur en forme de main pour indiquer l'interactivité */
+  transition: opacity 0.2s ease; /* Transition douce de l'opacité */
+}
+
+/* Effet de survol pour le bouton de recherche */
+.header-searchbar-search:hover {
+  opacity: 0.75; /* Réduire l'opacité au survol pour indiquer l'interactivité */
+}
+
+/* Texte du bouton de recherche */
+.header-searchbar-search h2 {
+  font-size: 18px; /* Taille de la police */
+}
+
+/* Icône du bouton de recherche, cachée par défaut */
+.fa-seventeen {
+  position: absolute; /* Position absolue pour cacher l'élément */
+  visibility: hidden; /* Masquer l'élément */
+}
+
+/* Conteneur des filtres dans le header pour écran d'ordinateur */
+.header-filters {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  flex-direction: row; /* Disposition en ligne */
+  align-items: center; /* Centrer verticalement */
+  width: 758px; /* Largeur du conteneur de filtres */
+  height: 50px; /* Hauteur du conteneur de filtres */
+  gap: 15px; /* Espace entre les éléments */
+  cursor: pointer; /* Curseur en forme de main pour indiquer l'interactivité */
+}
+
+/* Conteneur des titres et des options des filtres */
+.header-filters-title,
+.header-filters-options {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  gap: 15px; /* Espace entre les éléments */
+}
+
+/* Titre des filtres */
+.header-filters h2 {
+  font-size: 18px; /* Taille de la police */
+}
+
+/* Rangée des filtres */
+.header-filters-row {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  flex-direction: row; /* Disposition en ligne */
+  justify-content: space-evenly; /* Espacement égal entre les éléments */
+  align-items: center; /* Centrer verticalement */
+  border: 2px solid #d9d9d9; /* Bordure grise */
+  border-radius: 25px; /* Coins arrondis */
+  height: 50px; /* Hauteur de la rangée */
+}
+
+/* Texte des options des filtres */
+.header-filters-options h2 {
+  padding: 15px 19px 15px 0; /* Espacement autour du texte */
+  white-space: nowrap; /* Empêcher le retour à la ligne */
+  font-size: 17px; /* Taille de la police */
+}
+
+/* Effet de survol pour les options des filtres */
+.header-filters-row:hover {
+  background-color: #deebff; /* Changer la couleur de fond au survol */
+  transition: 0.15s; /* Transition douce pour le changement de couleur */
+}
+
+/* Icône des options des filtres */
+.fa-twentytwo {
+  font-size: 22px; /* Taille de l'icône */
+  padding: 14px 10px 14px 19px; /* Espacement autour de l'icône */
+}
+
+/* Ajustement des options des filtres */
+.header-filters-row:nth-child(2) {
+  padding-left: 4px; /* Ajustement du padding pour la deuxième option */
+}
+
+/* Conteneur de l'info bulle dans le header pour écran d'ordinateur */
+.header-tooltip {
+  height: 24px; /* Hauteur de l'info bulle */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  align-items: center; /* Centrer verticalement */
+}
+
+/* Icône de l'info bulle */
+.header-tooltip-icon {
+  height: 24px; /* Hauteur de l'icône */
+  width: 24px; /* Largeur de l'icône */
+  min-width: 24px; /* Largeur minimale de l'icône */
+  border: 1px solid #d9d9d9; /* Bordure grise */
+  border-radius: 50%; /* Bordure arrondie */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+}
+
+/* Texte de l'info bulle */
+.header-tooltip p {
+  padding-left: 10px; /* Espacement à gauche du texte */
+}
+
+/* Style de l'icône de l'info bulle */
+.mini-icon {
+  font-size: 10px; /* Taille de l'icône */
 }
