@@ -442,3 +442,47 @@ a {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+
+/****** Activités ***********/
+
+.activities-marseille {
+  width: 100%; /* Largeur de 100% */
+  text-align: left; /* Alignement du texte à gauche */
+  margin-top: 20px; /* Marge supérieure de 20px */
+  margin-bottom: 60px; /* Marge inférieure de 60px */
+}
+
+.activities-marseille h2 {
+  font-size: 24px; /* Taille de la police */
+  color: #000000; /* Couleur du texte */
+  padding: 30px 0px 25px 30px; /* Padding en haut, en bas et à gauche */
+}
+
+.activity-cards {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  justify-content: space-around; /* Espacement égal entre les éléments */
+  gap: 10px; /* Espace entre les éléments */
+  flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+}
+
+.activity-card {
+  flex-basis: 22%; /* Largeur de base de 22% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  border-radius: 20px; /* Coins arrondis de 20px */
+  overflow: hidden; /* Masque le dépassement du contenu */
+}
+
+.activity-card img {
+  width: 297.5px; /* Largeur des images */
+  height: 380px; /* Hauteur des images */
+  display: block; /* Affichage en bloc */
+}
+
+.activity-card p {
+  font-size: 16px; /* Taille de la police */
+  font-weight: 700; /* Poids de la police en gras */
+  color: #000000; /* Couleur du texte */
+  padding: 0px 0px 0px 20px; /* Padding à gauche de 20px */
+  margin-top: 15px; /* Marge supérieure de 15px */
+  margin-bottom: 15px; /* Marge inférieure de 15px */
+}
