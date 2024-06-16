@@ -486,3 +486,39 @@ a {
   margin-top: 15px; /* Marge supérieure de 15px */
   margin-bottom: 15px; /* Marge inférieure de 15px */
 }
+
+/****** Footer ***********/
+
+.footer {
+  background-color: #f8f8f8; /* Couleur de fond du footer */
+  padding: 20px; /* Espacement interne du footer */
+  display: flex; /* Crée un conteneur flex */
+  justify-content: space-around; /* Distribution uniforme des sections */
+  flex-wrap: wrap; /* Permet d'enrouler les éléments si nécessaire */
+  font-family: "Raleway", sans-serif; /* Police générale pour le footer */
+}
+
+.footer-section {
+  flex: 1 1 30%; /* Occupe 30% du conteneur avec possibilité d'expansion/réduction */
+  margin-bottom: 20px; /* Espacement entre les sections du footer */
+}
+
+.footer h4 {
+  font-size: 18px; /* Taille du titre */
+  color: #333; /* Couleur du titre */
+  margin-bottom: 10px; /* Espace sous le titre */
+}
+
+.footer p {
+  margin: 0; /* Réinitialise la marge par défaut */
+  padding: 5px 0; /* Espacement interne vertical */
+}
+
+.footer p a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: inherit; /* Hérite de la couleur du texte environnant */
+}
+
+.footer p a:hover {
+  text-decoration: underline; /* Souligne les liens au survol */
+}
