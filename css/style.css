@@ -303,3 +303,142 @@ a {
 .mini-icon {
   font-size: 10px; /* Taille de l'icône */
 }
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+
+.hebergements {
+  width: 65%; /* Largeur de 65% */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  flex-direction: column; /* Disposition en colonne */
+  gap: 30px; /* Espace entre les éléments */
+}
+
+.hebergements .section-title {
+  font-size: 22px; /* Taille de la police */
+}
+
+.hebergements .section-title:nth-child(3) {
+  font-size: 18px; /* Taille de la police pour le troisième enfant */
+}
+
+.hebergements-cards {
+  display: grid; /* Utilisation de Grid Layout pour la disposition */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); /* Trois colonnes flexibles */
+  gap: 30px; /* Espace entre les éléments */
+}
+
+.hebergements-card {
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  flex-direction: column; /* Disposition en colonne */
+  background-color: white; /* Fond blanc */
+  border-radius: 20px; /* Coins arrondis de 20px */
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Ombre portée */
+  transition: 0.2s ease-out; /* Transition douce */
+}
+
+.hebergements-card:hover {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2); /* Ombre portée plus intense au survol */
+}
+
+.hebergements-cards img {
+  height: 124px; /* Hauteur des images */
+  padding: 4px; /* Padding de 4px */
+  border-top-left-radius: 20px; /* Coin supérieur gauche arrondi */
+  border-top-right-radius: 20px; /* Coin supérieur droit arrondi */
+  object-fit: cover; /* Redimensionne les images pour couvrir leur conteneur */
+  width: 100%; /* Largeur des images */
+}
+
+.hebergements-card-content {
+  padding-left: 12px; /* Padding à gauche de 12px */
+  margin-top: 4px; /* Marge supérieure de 4px */
+  margin-bottom: 15px; /* Marge inférieure de 15px */
+  height: 64.25px; /* Hauteur du contenu */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  flex-direction: column; /* Disposition en colonne */
+  justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+.hebergements-card-title-name {
+  font-size: 16px; /* Taille de la police */
+}
+
+.hebergements-card-subtitle-name {
+  font-size: 14px; /* Taille de la police */
+}
+
+.hebergements-card-rating {
+  width: 81px; /* Largeur du conteneur de la note */
+  height: 13.25px; /* Hauteur du conteneur de la note */
+  display: flex; /* Utilisation de Flexbox pour la disposition */
+  align-items: center; /* Centrer verticalement */
+  justify-content: flex-start; /* Aligner à gauche */
+}
+
+.hebergements-card-rating .fa-star {
+  font-size: 13.25px; /* Taille de l'icône */
+  width: 14.29px; /* Largeur de l'icône */
+}
+
+.section-title {
+  margin: 0; /* Supprime les marges par défaut */
+  font-size: 22px; /* Taille de la police */
+}
+
+/****** Populaires ***********/
+.populaires {
+  width: 32%;
+}
+
+.populaires-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.populaires-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.populaires-cards img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+}
+
+.populaires-cards .card-rating {
+  margin-bottom: 5px;
+}
